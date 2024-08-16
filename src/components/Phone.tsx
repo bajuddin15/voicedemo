@@ -5,6 +5,7 @@ const Phone = () => {
   const [outgoingCall, setOutgoingCall] = useState<any>(null);
   const [incomingCall, setIncomingCall] = useState<any>(null);
   const [client, setClient] = useState<any>(null);
+  console.log({ outgoingCall });
   useEffect(() => {
     const client = new TelnyxRTC({
       /* Use a JWT to authenticate (recommended) */
